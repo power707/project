@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dan Jurnal - Portofolio saya</title>
+
+    <style>
+
+      /*
+      Palet Warna Color Pilihan Saya
+      1. Background Halaman : #F8F9FA
+      2. Header Dan Footer  : #212529
+      3. Aksen & Nav Active : #0D6EFD
+      4. Teks Konten        : #333333
+      */
+
+      .body{
+        font-family: Arial, sans-serif;
+        background-color: #F8F9FA;
+        color: #333333;
+        margin: 0;
+        padding: 0;
+      }
+
+      #header-blog, #footer-blog {
+        background-color: #212529;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .nav-utama a {
+        color: #ffffff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+
+      .nav a :hover{
+        transition: 0.2s ease;
+      }
+
+      .nav-utama a.active {
+        color: #8AD6D1;
+        font-weight: bold;
+        border-bottom: 2px solid #0D6EFD;
+      }
+
+      #konten-utama{
+        margin: 30px auto;
+        padding: 0 20px;
+        display: flex;
+      }
+
+      #konten-utama article{
+        flex: 1;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+      }
+
+      .sidebar-blog{
+        flex: 1;
+      }
+
+      .post-jurnal h2{
+        color: #212529;
+        margin-top: 0;
+      }
+
+      .post-jurnal h3{
+        color: #006EF0;
+      }
+
+      .post-jurnal small{
+        color: #666666;
+      }
+
+      .foto-jurnal {
+        margin: 20px 0;
+        text-align: center;
+      }
+
+      .foto-jurnal img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .foto-jurnal figcaption {
+        font-size: 0.85rem;
+        color: #6c757d;
+        font-style: italic;
+        margin-top: 8px;
+      }
+
+      .babak-cerita{
+        margin-top: 25px;
+        padding: 15px;
+        border-left: 4px solid #6c757d;
+      }
+
+      .widget{
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+
+      .widget h3{
+        margin: 0;
+        color: #212529;
+      }
+
+      .badge-tag {
+        display: inline-block;
+        background-color: #e9ecef;
+        color: #6c757d;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin: 3px;
+      }
+
+     @media screen and (max-width: 768px) {
+    #konten-utama {
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    #konten-utama article,
+    #sidebar-blog {
+        width: 100%;
+        flex: none;
+    }
+
+    #konten-utama article {
+        padding: 20px;
+    }
+
+    #header-blog {
+        padding: 18px 12px;
+    }
+
+    #header-blog h1 {
+        font-size: 1.7rem;
+    }
+
+    .nav-utama {
+        gap: 5px;
+    }
+
+    .nav-utama a {
+        font-size: 0.95rem;
+        margin: 5px;
+    }
+
+    .babak-cerita {
+        padding: 12px;
+        margin-top: 20px;
+    }
+
+    .foto-jurnal img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video,
+    .video-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #footer-blog {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    #header-blog {
+        padding: 15px 10px;
+    }
+
+    #header-blog h1 {
+        font-size: 1.4rem;
+    }
+
+    #konten-utama {
+        margin: 15px auto;
+        padding: 0 10px;
+        gap: 15px;
+    }
+
+    #konten-utama article {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .post-jurnal h2 {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    .post-jurnal h3 {
+        font-size: 1.05rem;
+    }
+
+    .post-jurnal p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .post-jurnal small {
+        font-size: 0.8rem;
+    }
+
+    .nav-utama {
+        gap: 2px;
+    }
+
+    .nav-utama a {
+        font-size: 0.85rem;
+        margin: 4px;
+    }
+
+    .foto-jurnal {
+        margin: 15px 0;
+    }
+
+    .foto-jurnal figcaption {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+
+    .babak-cerita {
+        margin-top: 15px;
+        padding: 10px;
+        border-left-width: 3px;
+    }
+
+    .widget {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .badge-tag {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    #footer-blog {
+        padding: 12px 10px;
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* HP sangat kecil */
+@media screen and (max-width: 320px) {
+    #header-blog h1 {
+        font-size: 1.2rem;
+    }
+
+    #konten-utama {
+        padding: 0 8px;
+    }
+
+    #konten-utama article {
+        padding: 10px;
+    }
+
+    .nav-utama a {
+        font-size: 0.8rem;
+        margin: 3px;
+    }
+
+    .post-jurnal h2 {
+        font-size: 1.15rem;
+    }
+
+    .post-jurnal p {
+        font-size: 0.85rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header Dan Menu Navigasi -->
+     <header id="header-blog">
+        <h1>Jurnal Harian Siswa PPLG</h1>
+        <nav class="nav-utama">
+            <a href="Beranda.html">Beranda</a>
+            <a href="profil.html">Profil</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="blog.html" class="active">Blog</a>
+        </nav>
+     </header>
+
+     <!-- Konten Utama -->
+      <main id="konten-utama">
+           <!-- Artikel Curhat Utama -->
+
+           <article class="post-jurnal">
+            <h2>Perjalanan Hari Pertama Masuk Lab PPLG</h2>
+            <p><small>Dipublikasikan Pada: <time datetime="2026-09-29">29 September 2026</time></small></p>
+              
+            <!-- Foto Dokumentasi Orisinal -->
+             <figure class="foto-jurnal">
+                <img src="foto-jurnal.jpg" alt="Suasana ngoding di depan layar komputer">
+                <figcaption>Dokumentasi: Meja Koding Praktikum HTML di SMKN 4 KUNINGAN</figcaption>
+             </figure>
+             
+             <!-- Babak 1 -->
+              <section class="babak-cerita">
+                <h3>Awal Mula Masuk PPLG</h3>
+                <p>
+                    Awal daftar itu saya memilih dua jurusan yaitu PPLG dan MPLB </br>
+                    tapi diterimanya di PPLG kirain, Jurusan PPLG jurusan yang nyantai   </br>
+                    tapi pas kelas 11 baru kerasa betapa capenya dijurusan ini dan ngelatih kesabaran juga  </br>
+                </p>
+              </section>
+
+              <!-- Babak 2 -->
+
+               <section class="babak-cerita">
+                <h3>Drama Kena Bug & Layar Merah</h3>
+                <p>
+                    Udah paling males kalo codingan error apalagi kalo udah banyak </br>
+                    udh cape cape kan ngetik pas di coba error , harus banyakin sabar sama siap mental aja </br>
+                </p>
+               </section>
+                    
+               <!-- Babak 3 -->
+
+               <section class="babak-cerita">
+                <h3>Pelajaran & Harapan Saya</h3>
+                <p>
+                    di pelajaran coding ini yang saya dapat adalah tentang usaha dan kerja keras jika </br> 
+                     kita berusaha dengan giat dan enggak gampang nyerah pasti bisa </br>
+                     harapan saya adalah dengan belajar seerti ini insya allah mau jadi programer </br>
+                </p>
+               </section>
+           </article>
+
+           <!-- Sidebar Pelengkap -->
+            <aside id="sidebar-blog">
+                <div class="widget">
+                    <h3>Author</h3>
+                    <p><strong>Al Nuh Hidayaullah</strong> - Siswa XI PPLG yang pantang menyerah sebelum syntax error teratasi.</p>
+                </div>
+
+                <div class="widget">
+                    <h3>Kategori Tag</h3>
+                    <span class="badge-tag">#CurhatPPLG</span>
+                    <span class="badge-tag">#HTML5</span>
+                    <span class="badge-tag">#BugHunter</span>
+                </div>
+            </aside>
+      </main>
+
+      <!-- Footer -->
+
+      <footer id="footer-blog">
+        <p>&copy; 2026 - PPLG SMKN 4 KUNINGAN | Dibuat oleh Al Nuh Hidayatullah</p>
+      </footer>
+    
+</body>
+</html>

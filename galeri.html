@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website portofolio Resmi Al Nuh Hidayatullah Siswa XI PPLG 2 SMKN 4 Kuningan">
+    <meta name="author" content="Al Nuh Hidayatullah">
+    <title>Galeri portofolio - Al Nuh Hidayatullah XI PPLG 2</title>
+    <link rel="icon" type="image/png" href="https://www.smkn4kuningan.sch.id/favicon-32x32.png">
+    <style>
+      body {
+         background-color: rgb(255, 255, 255);
+         color:#000000;
+      }
+
+      .img{
+         max-width: 100%;
+         height: auto;
+      }
+      
+      .card{
+         border: 2px solid #42A5F5;
+         padding: 20px;
+         margin-bottom: 20px;
+         background-color: #EEEEEE;
+         font-family: Arial, sans-serif;
+         transition: 0.3s ease;
+      }
+      .card:hover {
+         transform: scale(1.05);
+      }
+      .video-box {
+         width: 100%;
+         display: block;
+         max-width: 580px;
+         margin: 15px auto;
+      }
+      .video-box iframe{
+         width: 100%;
+         height: 100%;
+         max-width: 600px;
+         border: 0;
+         border-radius: 8px;
+      }
+      .proyektor{
+        width:100%;
+        height: 320px;
+        border: 2px solid #cbd5e1;
+        border-radius: 8px;
+        background-color: #f1f2f4;
+      }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <a href="https://smkn4kuningan.sch.id" target="_blank">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-QwSTyiqAFYREpajq7vtpYxCvIY4Ld6sYv-0xsaN-lg&s=10"
+         style="width: 90px; height: auto;">
+         </a>
+         </div>
+
+    <div class="card">
+        <nav class="nav-utama">
+        <ul>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="Beranda.html">Beranda</a></li>
+            <li><a href="galeri.html" class="active">Galeri</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <div class="video-box">
+        <h3>Video Rekomendasi Belajar</h3>
+        <iframe
+        src="https://www.youtube.com/embed/TanFwAcHBqE?si=8GTJ4kjCVSWcgkZh"
+        title="Video Rekomendasi Belajar"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+    </div>
+      
+    <div class="proyektor">
+        <h3>Layar Demo Antar Halaman</h3>
+        <a href="Beranda.html" target="proyektor-karya">Buka Beranda</a> |
+        <a href="profil.html" target="proyektor-karya">Buka Profil</a> |
+        <iframe name="proyektor-karya" src="Beranda.html" title="Layar Demo">
+        </iframe>
+        </div>
+
+        <hr>
+           <footer style="text-align: right;">&copy; 2026 Dibuat Oleh Al Nuh Hidayatullah - XI PPLG2</footer>
+
+
+    </body>
+    </html>

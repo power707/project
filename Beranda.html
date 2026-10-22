@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website portofolio Resmi Al Nuh Hidayatullah Siswa XI PPLG 2 SMKN 4 Kuningan">
+    <meta name="author" content="Al Nuh Hidayatullah">
+    <title>Beranda portofolio - Al Nuh Hidayatullah XI PPLG 2</title>
+    <link rel="icon" type="image/png" href="https://www.smkn4kuningan.sch.id/favicon-32x32.png">
+
+    <style>
+      body {
+         background-color: rgb(255, 255, 255);
+         color:#000000;
+         margin:auto;
+         font-size: 12px;
+      
+      }
+       
+      .img{
+         max-width: 100%;
+         height: auto;
+      }
+      .card{
+         border: 2px solid #42A5F5;
+         padding: 20px;
+         margin-bottom: 20px;
+         background-color: #EEEEEE;
+         font-family: Arial, sans-serif;
+         transition: 0.3s ease;
+      }
+      .card:hover {
+         transform: scale(1.05);
+      }
+      .badge{
+         display: inline-block;
+         padding: 5px 10px;
+         background-color: #0b3c5d;
+         color: white;
+         border-radius: 5px;
+      }
+      .highlight{
+         background-color: #f1f2f4;
+         padding: 5px;
+         border-radius: 5px;
+      }
+      .video-box{
+         width: 100%;
+         max-width: 500px;
+         border-radius: 8px;
+      }
+      .video-box h3{
+         text-align: center;
+      }
+      .audio{
+         border: 1px solid #ddd;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .table-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #EEEEEE;
+    border: 1px solid #42A5F5;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Batasi tabel di dalam layar */
+.table-responsif {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+/* Tabel menyesuaikan lebar pembungkus */
+.schedule-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #2596BE;
+    background-color: #FFFFFF;
+}
+
+/* Sel tabel */
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #2596BE;
+    padding: 6px 3px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Judul tabel */
+.schedule-table caption {
+    caption-side: top;
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+/* Header */
+.schedule-table thead th {
+    background-color: #0B3C5D;
+    color: white;
+}
+
+/* Baris bergantian */
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #F1F2F4;
+}
+
+/* Catatan bawah tabel */
+.schedule-table tfoot td {
+    background-color: #D9F0FA;
+    font-size: 11px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    .table-card {
+        padding: 4px;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 5px 2px;
+        font-size: 10px;
+    }
+
+    .schedule-table caption {
+        font-size: 12px;
+    }
+}
+
+       
+      @media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    header img {
+        width: 75px !important;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .nav-utama ul {
+        padding-left: 20px;
+    }
+
+    .nav-utama li {
+        margin-bottom: 8px;
+    }
+
+    .video-box {
+        width: 100%;
+    }
+
+    .video-box video {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .audio {
+        padding: 12px;
+        overflow: hidden;
+    }
+
+    .audio audio {
+        width: 100%;
+    }
+
+    .schedule-table {
+        min-width: 700px;
+    }
+
+    .schedule-table td,
+    .schedule-table th {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    pre {
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: pre;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 12px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 12px;
+        margin: 8px;
+        border-width: 1px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    header img {
+        width: 65px !important;
+    }
+
+    header .card p {
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .badge {
+        padding: 4px 7px;
+        font-size: 12px;
+    }
+
+    .highlight {
+        overflow-wrap: anywhere;
+    }
+
+    .video-box h3,
+    .audio h3 {
+        line-height: 1.5;
+    }
+
+    .video-box video {
+        width: 100%;
+        height: auto;
+    }
+
+    .audio {
+        padding: 10px;
+    }
+
+    .schedule-table {
+        min-width: 700px;
+        overflow-x: auto;
+    }
+
+    .schedule-table td,
+    .schedule-table th {
+        padding: 6px;
+        font-size: 11px;
+        
+    }
+
+    .table-responsif {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    pre {
+        padding: 8px !important;
+        font-size: 11px;
+    }
+
+    kbd {
+        font-size: 11px;
+    }
+
+    footer {
+        text-align: center !important;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+
+      
+    </style>
+</head>
+<body id="top">
+
+    <!-- ini bagian Header -->
+     <header>
+         
+      <div style="text-align: center;">
+        <a href="https://smkn4kuningan.sch.id" target="_blank">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-QwSTyiqAFYREpajq7vtpYxCvIY4Ld6sYv-0xsaN-lg&s=10"
+         style="width: 90px; height: auto;">
+         </a>
+         </div>
+         <div class="card">
+         <p>
+            <span style="font-size: 32px; vertical-align: middle;">&#x1F44B;</span>selamat datang di portofolio saya
+         </p>
+        <h1 style="color: #000000; text-align: center;">Portal Siswa Al nuh Hidayatullah</h1>
+          </div>        
+     </header>
+     <hr>
+     <!-- ini bagian Navigasi -->
+      <div class="card">
+         <nav class="nav-utama">
+      <ul>
+        <li><b>
+       <li><a href="Beranda.html" class="active">&#x1F3E0;klik</a></li>
+        <li><a href="profil.html">&#x1F468;Profil</a></li>
+        <li><a href="https://github.com" target="_blank">&#x1F332;github</a></li>
+        <li><a href="#info-kegiatan">&#x1F4D1;info kegiatan</a></li> 
+        <li><a href="galeri.html">&#x1F4F7;galeri</a></li>
+         <li><a href="blog.html">&#x1F4F7;blog</a></li>
+        </ul>
+        </nav>
+           </div>
+        <!-- ini konten utama -->
+         <div class="card">
+         <p>
+            <b>Alhamdulillah saya sangat senang belajar di jurusan PPLG</b> <br>
+            <i>dan saya sangat senang bisa belajar hal hal yang baru</i> <br>
+         </p>
+            <p>
+               <b>Al Nuh Hidayatullah</b> <br>
+               <i>Siswa XI PPLG 2 SMKN 4 Kuningan</i> <br>
+               <a href="https://smkn4kuningan.sch.id" target="_blank">SMKN 4 Kuningan</a>
+            </p>
+            <div class="card">
+         <p>
+            dan saya sudah banyak belajar tag tag html seperti:<br>
+            &lt;picture&gt; untuk menambahkan foto &lt;source&gt; untuk menentukan sumber file atau foto<br>
+            &lt;img&gt; sama untuk menambahkan foto <br>
+            dan masih banyak lagi sebenarnya
+         </p>
+         <p>
+            Saya belajar di Jurusan PPLG
+            <span class="highlight">PPLG SMKN 4 KUNINGAN</span>
+            selama saya belajar saya memahami berbagai materi
+            tentang pemrogramandan pembuatan website
+         </p> 
+         <p>
+            saya merasa senang karena dapat belajar hal baru tentang teknologi.
+            <span class="badge">Belajar HTML</span>membantu saya memahami membuat struktur 
+            membuat website
+         </p>
+            </div>
+                  <div class="video-box">
+               <h3>Showcase media & dokumentasi belajar</h3>
+                  <video controls poster="https://vjs.zencdn.net/v/oceans.png">
+                     <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                  </video>
+                  <p>Video ini menampilkan tentang bagaimana kehidupan di lautan</p>
+               </div>
+                
+               <div class="audio">
+                  <h3>Media Audio & Suara Pembelajaran</h3>
+                  <audio controls>
+                     <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                     <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                  </audio>
+                  <p>Ini Adalah Suara kuda</p>
+               </div>
+
+            </div>
+            <div class="card">
+           <h3 id="info-kegiatan">Agenda Belajar Lab</h3>
+           <ol type="1">
+            <li>&#x2B50;mengerjakan soal study kasus</li>
+            <li>&#x1F4C2;belajar membuat folder</li>
+            <li>&#x1F4D1;belajar HTML dan CSS dasar</li>
+           </ol>  
+         </div>
+
+         <div class="card">
+           <h3>&#128197;Jadwal Pelajaran XI PPLG 2</h3>
+          </div>
+          <div class="table-card">
+            <table class="schedule-table">
+               <div class="table-responsif">
+               <caption>
+                  Jadwal Pelajaran XI PPLG 2 SMKN 4 KUNINGAN
+               </caption>
+               <colgroup>
+                  <col style="background-color: #f2f2f2;">
+                  <col style="background-color: #e6e6e6;">
+                  <col style="background-color: #f2f2f2;">
+                  <col style="background-color: #e6e6e6;">
+                  <col style="background-color: #f2f2f2;">
+                  <col style="background-color: #e6e6e6;">
+                  
+               </coulgroup>
+               <thead>
+                  <!-- Senin -->
+                  <tr>
+                     <th>Hari</th>
+                     <th>Jam ke</th>
+                     <th>Waktu</th>
+                     <th>Mata Pelajaran</th>
+                     <th>Guru</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td rowspan="11"><strong>Senin</strong></td>
+                     <td>1</td>
+                     <td>06:30 - 07:15</td>
+                     <td>Upacara</td>
+                     <td>Without Teacher</td>
+                  </tr>
+                  <tr>
+                     <td rowspan="4">2 - 5</td>
+                     <td rowspan="4">07:15 - 09.30</td>
+                     <td rowspan="4">Rekayasa Perangkat Lunak</td>
+                     <td rowspan="4">Eka Mutiara Putri, S.kom.</td>
+                  </tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+
+                  <tr>
+                     <td colspan="4">&#9749;Istirahat</td>
+                  </tr>
+
+                  <tr>
+                     <td rowspan="2">6 - 7</td>
+                     <td>10.35 - 12.05</td>
+                     <td rowspan="2">Penjasorkes</td>
+                     <td rowspan="2">Abdul Husein, S.pd.</td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                     <td rowspan="2">8 - 9</td>
+                     <td>12.05 - 13.55</td>
+                     <td rowspan="2">Pendidikan Pancasila</td>
+                     <td rowspan="2">Beri Epridiansyah, S.Pd.</td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                     <td rowspan="2">10 - 11</td>
+                     <td>13.55 - 15.15</td>
+                     <td rowspan="2">Bahasa Sunda</td>
+                     <td rowspan="2">Ade Gumelar, S.Pd.</td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                     <td colspan="5">&#9749;Istirahat Di rumah</td>
+                  </tr>
+
+                  <!-- Selasa -->
+                   <tr>
+                     <td rowspan="11"><strong>Selasa</strong></td> 
+                     <td rowspan="3">1 - 3</td>
+                     <td rowspan="3">06.30 - 08.35</td>
+                     <td rowspan="3">PAIBP</td>
+                     <td rowspan="3">Maman Lukmanul Hakim, S.Pd.</td>
+                   </tr>
+                   <tr></tr>
+                   <tr></tr>
+                   <tr>
+                     <td rowspan="2">4 - 5</td>
+                     <td rowspan="2">08.45 - 10.35</td>
+                     <td rowspan="2">Bahasa Inggris</td>
+                     <td rowspan="2">Ulfa Nur Agussetia, S.Pd.</td>
+                   </tr>
+                   <tr></tr>
+
+                   <tr>
+                     <td colspan="4">&#9749;Istirahat</td>
+                  </tr>
+         
+                   <tr>
+                     <td rowspan="2">6 - 7</td>
+                     <td rowspan="2">10.35 - 12.05</td>
+                     <td rowspan="2">Sejarah</td>
+                     <td rowspan="2">Roni Purnama, S.Pd.</td>
+                   </tr>
+                   <tr></tr>
+                   <tr>
+                     <td rowspan="3">8 - 10</td>
+                     <td rowspan="3">12.35 - 14.35</td>
+                     <td rowspan="3">Bahasa Indonesia</td>
+                     <td rowspan="3">Mala Nurohmawatie, S.Pd.</td>
+                   </tr>
+                   <tr></tr>
+                   <tr></tr>
+                   <tr>
+                     <td colspan="5">&#9749;Istirahat Di rumah</td>
+                   </tr>
+
+                   <!-- Rabu -->
+                    <tr>
+                     <td rowspan="13"><strong>Rabu</strong></td>
+                     <td rowspan="5">1 - 5</td>
+                     <td rowspan="5">06.30 - 10.10</td>
+                     <td rowspan="5">KIK</td>
+                     <td rowspan="5">Teguh Saputra, S.Pd.</td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                     <tr></tr>
+
+                     <tr>
+                     <td colspan="4">&#9749;Istirahat</td>
+                  </tr>
+
+                    <tr>
+                     <td rowspan="3">6 - 8</td>
+                     <td rowspan="3">10.10 - 12.10</td>
+                     <td rowspan="3">Matematika</td>
+                     <td rowspan="3">Euis Herawati, S.Pd.</td>
+                    </tr>
+                    <tr></tr>
+                     <tr></tr>
+
+                    <tr>
+                     <td rowspan="4">9 - 12</td>
+                     <td rowspan="4">12.40 - 15.20</td>
+                     <td rowspan="4">Rekayasa Perangkat Lunak</td>
+                     <td rowspan="4">Esa Daniansa, S.Kom.</td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                     <td colspan="5">&#9749;Istirahat Di rumah</td>
+                    </tr>
+                    <!-- Kamis -->
+                     <tr>
+                        <td rowspan="11"><strong>kamis</strong></td>
+                        <td rowspan="2">1 - 2</td>
+                        <td rowspan="2">06.30 - 08.00</td>
+                        <td rowspan="2">Bahasa Inggris</td>
+                        <td rowspan="2">Ulfa Nur Agussetia, S.Pd</td>
+                     </tr>
+                     <tr></tr>
+                     <tr>
+                        <td rowspan="4">3 - 6</td>
+                        <td rowspan="4">08.00 - 11.20</td>
+                        <td rowspan="4">Rekayasa Perangkat Lunak</td>
+                        <td rowspan="4">Nurul Rahmayani, S.Pd.</td>
+                     </tr>
+                     <tr></tr>
+                     <tr></tr>
+                     <tr></tr>
+
+                     <tr>
+                     <td colspan="4">&#9749;Istirahat</td>
+
+                  </tr>
+                     <tr>
+                        <td rowspan="4">7 - 10</td>
+                        <td rowspan="4">11.20 - 14.35</td>
+                        <td rowspan="4">Mapel Pilihan PPLG</td>
+                        <td rowspan="4">Eka Mutiara Putri, S.Kom.</td>
+                     </tr>
+                     <tr></tr>
+                     <tr></tr>
+                     <tr></tr>
+                     <tr>
+                        <td colspan="5">&#9749;Istirahat Di rumah</td>
+                     </tr>
+                     <!-- Jum'at -->
+                     <tr>
+                        <td rowspan="8"><strong>Jum'at</strong></td>
+                        <td>1</td>
+                        <td>06.30 - 07.10</td>
+                        <td>Pembinaan</td>
+                        <td>Without Teacher</td>
+                     </tr>
+                     <tr>
+                        <td rowspan="3">2 - 4</td>
+                        <td rowspan="3">07.10 - 09.10</td>
+                        <td rowspan="3">Bahasa Inggris</td>
+                        <td rowspan="3">Ulfa Nur Agussetia, S.PD.</td>
+                     </tr>
+                     <tr></tr>
+                     <tr></tr>
+
+                     <tr>
+                     <td colspan="4">&#9749;Istirahat</td>
+                  </tr>
+
+                     <tr>
+                        <td rowspan="3">5 - 7</td>
+                        <td rowspan="3">09.30 - 11.30</td>
+                        <td rowspan="3">Rekayasa Perangkat Lunak</td>
+                        <td rowspan="3">Candra Appriana, S.Pd.</td>
+                     </tr>
+                     <tr></tr>
+                     <tr></tr>
+                     <tr>
+                        <td colspan="5">&#9749;Istirahat Di rumah</td>
+                     </tr>
+               </tbody>
+               <tfoot>
+                  <tr>
+                     <td colspan="5">
+                        Wali Kelas PPLG 2:
+                        <strong>Eka Mutiara Putri, S.Kom.</strong>
+                     </td>
+                  </tr>
+                  <tr>
+                      <td colspan="5">
+                     NOTE: XI PPLG 2 Harus bisa menjaga kelasnya dengan baik , selalu jaga kebersihannya
+                        dan jangan sampai membuat masalah
+                      </td>
+                  </tr>
+               </tfoot>
+            </table>
+            </div>
+         </div>
+
+            <div class="card">
+              <h3>Panduan Pintasan & Struktur Kode</h3>
+
+        <p>Untuk Mencari teks dalam file, tekan tombol <kbd>CTRL</kbd> + <kbd>F</kbd> pada keyboard</p>
+        <p>Untuk membuat file baru, tekan tombol <kbd>CTRL</kbd> + <kbd>N</kbd> pada keyboard</p>
+        <p>Untuk mencari file ,tekan tombol <kbd>CTRL</kbd> + <kbd>P</kbd> pada keyboard</p>
+           </div>
+           <div class="card">
+         <p>Contoh Skrip HTML:</p>
+
+         <pre style="background-color: rgb(0, 0, 0); padding:10px; color:#ffffff;">
+            <code>
+                &lt;p&gt;di gunakan untuk membuat paragraf&lt;/p&gt;
+                &lt;hr&gt;untuk memberikan garis horinzontal atau pembatas&lt;/hr&gt;
+            </code>
+         </pre>
+         </div>
+          <p>Respon terminal:<samp>Connection successful. server is running on (port 8080)</samp></p>
+
+            <a href="#top">Kembali ke atas halamannya</a>
+
+            <!-- ini bagian footer -->
+           <hr>
+           <footer style="text-align: right;">&copy; 2026 Dibuat Oleh Al Nuh Hidayatullah - XI PPLG2</footer>
+
+
+    
+</body>
+</html>

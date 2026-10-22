@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website portofolio Resmi Al Nuh Hidayatullah Siswa XI PPLG 2 SMKN 4 Kuningan">
+    <meta name="author" content="Al Nuh Hidayatullah">
+    <title>Profil portofolio - Al Nuh Hidayatullah XI PPLG 2</title>
+    <link rel="icon" type="image/png" href="https://www.smkn4kuningan.sch.id/favicon-32x32.png">
+    <style>
+      body {
+         background-color: rgb(255, 255, 255);
+         color:#000000;
+         margin:auto;
+      }
+
+      .img{
+         max-width: 100%;
+         height: auto;
+      }
+       
+      .card{
+         border: 2px solid #42A5F5;
+         padding: 20px;
+         margin-bottom: 20px;
+         background-color: #EEEEEE;
+         font-family: Arial, sans-serif;
+         transition: 0.3s ease;
+      }
+      .card:hover {
+         transform: scale(1.05);
+      }
+       .video-box{
+         width: 320px;
+         border-radius: 6px;
+       }
+       .audio{
+        border: 1px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+       .lokasi{
+        width: 100%;
+        height: 280px;
+        border: 0;
+        border-radius: 8px;
+       }
+
+       @media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .nav-utama ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .video-box,
+    .audio,
+    .lokasi {
+        max-width: 100%;
+    }
+
+    .lokasi iframe {
+        height: 280px;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .card {
+        padding: 12px;
+        border-width: 1px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .nav-utama ul {
+        padding-left: 15px;
+    }
+
+    .nav-utama li {
+        margin-bottom: 5px;
+        line-height: 1.5;
+    }
+
+    .video-box {
+        margin: 15px 0;
+    }
+
+    .audio {
+        padding: 10px;
+    }
+
+    .lokasi iframe {
+        height: 240px;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+      </style>
+</head>
+<body> 
+
+    <!-- Bagian atas -->
+     <h1>&#128075;Biodata Siswa - Al Nuh Hidayatullah</h1>
+     <div class="card">
+         <picture>
+            <source media="(min-width:600px)" srcset="foto-profil.jpg">
+       <img src="foto-profil-kecil.jpg" alt="Foto siswa Al nuh Hidayatullah"
+       style="width: 150px; height: auto;">
+        
+       <nav class="nav-utama">
+       <ul>
+         <li><a href="Beranda.html" style="color: #0b3c5d; text-decoration: none;"><b>&lt;&gt;</b>ke halaman beranda</a></li>
+         <li><a href="profil.html" class="active" style="color: #0b3c5d; text-decoration: none;"><b>&lt;&gt;</b>ke halaman profil</a></li>
+         <li><a href="galeri.html" style="color: #0b3c5d; text-decoration: none;"><b>&lt;&gt;</b>ke halaman galeri</a></li>
+          <li><a href="blog.html" style="color: #0b3c5d; text-decoration: none;"><b>&lt;&gt;</b>ke halaman blog</a></li>
+       </ul>
+       </picture>
+     </div>
+     <hr>
+
+     <!-- Bagian Biodata -->
+      <div class="card">
+      <p style="background-color: #f1f2f4;">
+       <b> Nama: Al Nuh Hidayatullah</b> <br>
+        <b>  Kelas: XI PPLG 2</b> <br>
+         <b> Konsentrasi Keahlian: pengembangan Perangkat Lunak dan Gim (PPLG)</b> <br>
+         <b> Sekolah: SMKN 4 KUNINGAN</b>
+      </p>
+    </div>
+        
+         <div class="video-box">
+              <video controls loop muted>
+                <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                browser anda tidak mendukung tag video HTML5
+              </video>
+         </div>
+
+        <div class="card">
+      <h3>Deskripsi keahlian</h3>
+    <p>saya sedang mempelajari pengolahan data variabel<var>$totalNilai</var> menggunakan bahasa pemrograman <code>PHP</code></p>
+       <h3>Hobi Saya</h3>
+    <ul>
+      <li>&#x1F4BB;Belajar coding</li>
+      <li>&#x26BD;bermain bola</li>
+      <li>&#x1F3AE;bermain game</li>
+    </ul> 
+    </div>
+      
+    <div class="audio">
+      <p>Efek Suara Favorit</p>
+      <audio controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+        browser anda tidak mendukung tag audio HTML5
+      </audio>
+    </div>
+
+    <div class="lokasi">
+      <h3>Lokasi Kampus Sekolah</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4520264997814!2d108.68152037587629!3d-6.955884768102998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f0e97e9beddcb%3A0x2fd17d5f9eaf9d66!2sSMK%20Negeri%204%20Kuningan!5e0!3m2!1sid!2sid!4v1790997482971!5m2!1sid!2sid"
+        allowfullscreen=""
+        loading="lazy"
+        title="Peta Lokasi SMKN 4 KUNINGAn ">
+    </iframe>
+    </div>
+
+      <!-- Bagian Kontak Siswa -->
+       <div class="card">
+       <h3>Kontak saya</h3>
+       <ul>
+        <li><a href="mailto:alnuhhidayatullah@gmail.com">&#x1F48C;email saya</a></li>
+        <li><a href="tel:081460367173">&#x1F4DE;nomor saya</a></li>
+       </ul>
+        </div>
+       <!-- Bagian Footer -->
+        <hr>
+        <footer style="text-align: right;">
+            &copy; 2026 Al Nuh Hidayatullah - XI PPLG 2 SMKN 4 KUNINGAN
+        </footer>
+    
+</body>
+</html>
